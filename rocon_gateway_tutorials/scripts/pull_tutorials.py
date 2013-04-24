@@ -57,17 +57,10 @@ class Context(object):
   Tests pulls, either for all tutorials (default) or one by one (via args).
   
   Usage:
-    1 > roslaunch rocon_gateway_tutorials pirate.launch
-    2a> roslaunch rocon_gateway_tutorials pirate_gateway_tutorials.launch
-    3a> roslaunch rocon_gateway_tutorials pirate_gateway.launch
-    2b> rosrun rocon_gateway_tutorials advertise_tutorials.py
-    3b> rosrun rocon_gateway_tutorials pull_tutorials.py
-    3c> rostopic echo /fibonacci/server/feedback
-    3d> roslaunch rocon_gateway_tutorials fibonacci_client.launch
-    3e> roslaunch rocon_gateway_tutorials fibonacci_server.launch
-    2c> # wait for fibonnacci client to finish and close 
-    3e> rosrun rocon_gateway_tutorials pull_tutorials.py --cancel
-    2d> rosrun rocon_gateway_tutorials advertise_tutorials.py --cancel
+    > rocon_launch rocon_gateway_tutorials gateway_tutorials.concert
+    2 > rosrun rocon_gateway_tutorials advertise_all.py
+    3a> rosrun rocon_gateway_tutorials pull_tutorials --pubonly
+    3b> rosrun rocon_gateway_tutorials pull_tutorials --pubonly --cancel
     
   Variations in the options (singly, or by regex patterns).
 """
@@ -92,6 +85,7 @@ if __name__ == '__main__':
 
     rospy.init_node('pull_tutorials')
     rocon_gateway.samples.wait_for_gateway()
+    # This works for both graph concert and gateway tutorial concert
     remote_gateway = 'pirate_gateway.*'
     #rocon_gateway.samples.wait_for_remote_gateway(remote_gateway)
     context = Context(remote_gateway, args.cancel, args.regex)

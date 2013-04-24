@@ -84,6 +84,7 @@ if __name__ == '__main__':
     rospy.init_node('flip_tutorials')
 
     rocon_gateway.samples.wait_for_gateway()
+    #remote_gateway = "pirate_gateway"
     remote_gateway = rocon_gateway.samples.find_first_remote_gateway()
     context = Context(remote_gateway, args.cancel, args.regex)
 
