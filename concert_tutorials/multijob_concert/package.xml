@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>multijob_concert</name>
+  <version>0.0.0</version>
+  <description>The multijob_concert package</description>
+  <maintainer email="jihoonlee.in@gmail.com">Jihoon Lee</maintainer> 
+
+  <license>TODO</license>
+
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://ros.org/wiki/multijob_concert</url> -->
+
+  <author email="jihoonlee.in@gmail.com">Jihoon Lee</author> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>turtle_concert</run_depend>
+  <run_depend>chatter_concert</run_depend>
+</package>

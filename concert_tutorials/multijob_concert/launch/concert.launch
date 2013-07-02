@@ -1,0 +1,8 @@
+<launch>
+  <group ns="concert">
+    <!-- ********************* Conductor and Gateway ***************************** -->
+    <include file="$(find concert_conductor)/launch/conductor.launch">
+      <arg name="concert_name" value="multijob_concert"/>
+    </include>
+  </group>
+</launch>

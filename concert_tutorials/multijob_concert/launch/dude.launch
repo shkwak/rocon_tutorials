@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find multijob_concert)/launch/includes/_concert_client.xml">
+    <arg name="concert_client_name" value="dude" />
+    <arg name="concert_name"        value="multijob_concert"/>
+  </include>
+</launch>
