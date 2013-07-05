@@ -4,6 +4,7 @@
     <!-- ********************* Conductor and Gateway ***************************** -->
     <include file="$(find concert_conductor)/launch/conductor.launch">
       <arg name="concert_name" value="chatter_concert"/>
+      <arg name="concert_auto_invite" value="true"/>
     </include>
     
     <!-- ******************************* Orchestra ******************************* -->

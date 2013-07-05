@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>multiservice_concert</name>
+  <version>0.0.0</version>
+  <description>The multiservice_concert package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="jihoonlee.in@gmail.com">Jihoon Lee</maintainer>
+  <author email="jihoonlee.in@gmail.com">Jihoon Lee</author>
+  <license>BSD</license>
+
+  <!-- <url type="website">http://ros.org/wiki/multiservice_concert</url> -->
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

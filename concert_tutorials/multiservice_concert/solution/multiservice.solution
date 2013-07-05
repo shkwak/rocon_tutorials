@@ -1,0 +1,6 @@
+# A Solution can have multiple default jobs. 
+
+name: "Multi Service Solution"
+services:
+  - multiservice_concert/chatter.service
+  - multiservice_concert/turtle_concert.service

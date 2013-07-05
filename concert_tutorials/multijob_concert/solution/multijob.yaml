@@ -1,6 +1,0 @@
-# A Solution can have multiple default jobs. 
-
-name: "Multi Job Solution"
-jobs:
-  - multijob_concert/chatter
-  - multijob_concert/turtle_concert
